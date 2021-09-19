@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding-right: 230px;
+    padding-left: 230px;
+    box-sizing: border-box;
+}
+
+.menu_section{
+    background-color: black;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.left_menu_section,.right_menu_section{
+    display: flex;
+}
+
+.logo{
+    margin-right: 41px;
+}
+
+.poisk{
+    margin-top: 8px;
+}
+
+.drop_down{
+    margin-top: 5px;
+}
+
+.drop_down,.account{
+    margin-right: 33px;
+}
+.main_image_section{
+    background-color:#F1E4E6;
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.main_image_text{
+    font-family: Lato;
+    font-style: normal;
+    width: 377px;
+    font-size: 48px;
+    line-height: 58px;
+    weight: 900;
+
+    color: #222222;
+
+    position:absolute;
+
+    top: 290px;
+    right: 331px;
+}
+
+.middle_section{
+    background-color: white;
+}
+
+.for_whom_section{
+    padding-top: 65px;
+    display: flex;
+}
+
+.for_whom{
+    flex-grow: 1;
+}
+
+.for_women, .for_men{
+    margin-right: 30px;
+}
+
+.accessories{
+    margin-top: 30px;
+}
+
+.featured_items_header{
+    text-align: center;
+}
+
+.featured_items_paragraph{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    margin-top: 30px;
+}
+
+.card{
+    flex-grow: 1;
+}
+
+.all_product_button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 48px auto 95px;
+    text-align: center;
+    width: 210px;
+    height: 47px;
+    border: 1px solid #FF6A6A;
+}
+
+.margin_card{
+    margin-right: 30px;
+}
+
+.advantages_section{
+    background-color:#222224;
+    padding-top: 104px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 104px;
+}
+
+.free_delivery_block{
+    height: 100px;
+    width: 360px;
+    text-align: center;
+}
+
+.margin_block{
+    margin-right: 30px;
+}
+
+.lorem_block{
+    margin-top: 87px;
+}
+
+.lorem_text{
+    padding-top: 30px;
+    text-align: center;
+    width: 360px;
+}
+
+.subscribe_section{
+    /* background: rgba(244, 244, 244, 0.7); */
+    background-image: url(images/subscribe_background.svg);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 156px;
+}
+
+.subscribe_block{
+    margin-top: 150px;
+}
+
+
+.contacts_section{
+    height: 80px;
+    background-color:#222224;   
+}
+
