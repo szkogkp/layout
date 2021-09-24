@@ -6,7 +6,10 @@
 .container{
     padding-right: 230px;
     padding-left: 230px;
-    box-sizing: border-box;
+}
+
+.center_container{
+    padding:0 auto;
 }
 
 .menu_section{
@@ -39,24 +42,61 @@
 .main_image_section{
     background-color:#F1E4E6;
     display: flex;
-    height: 100%;
-    position: relative;
+    height: 100%;   
 }
 
 .main_image_text{
     font-family: Lato;
     font-style: normal;
-    width: 377px;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 32px;
     weight: 900;
 
     color: #222222;
 
-    position:absolute;
+    display: flex;
 
-    top: 290px;
-    right: 331px;
+    height: 92px;
+    padding-top: 300px;
+    padding-right: 200px;
+}
+
+.big_menu{
+    background: white;
+    height: 100%;
+    padding-bottom:150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 37px;
+    opacity: 0;
+    position: relative;
+}
+
+.krestik{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.first_li{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #F16D7F;
+    list-style-type: none;
+}
+
+.second_li{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 15px;
+    /* identical to box height */
+    
+    
+    color: #6F6E6E;
+    list-style-type: none;
 }
 
 .middle_section{
@@ -66,10 +106,7 @@
 .for_whom_section{
     padding-top: 65px;
     display: flex;
-}
-
-.for_whom{
-    flex-grow: 1;
+    justify-content: space-around;
 }
 
 .for_women, .for_men{
@@ -78,38 +115,97 @@
 
 .accessories{
     margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .featured_items_header{
     text-align: center;
+    font-family: Lato;
+    font-size: 30px;
+    line-height: 36px;
+    
+    
+    color: #222222;
 }
 
 .featured_items_paragraph{
     text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #9F9F9F;
 }
 
 .cards{
-    display: flex;
     margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .card{
     flex-grow: 1;
+    background: #F8F8F8;
+}
+
+.card_header{
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 16px;
+    
+    margin-top: 25px;
+    margin-bottom: 13px;
+    color: #000000;
+}
+
+.card_paragraph{
+    font-family: Lato;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #5D5D5D;
+}
+
+.card_price{
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    
+    margin-top: 18px;
+    color: #F16D7F;
+
 }
 
 .all_product_button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 48px auto 95px;
-    text-align: center;
-    width: 210px;
-    height: 47px;
+    padding: 14px 39px;
     border: 1px solid #FF6A6A;
+    width: 210px;
+
+    color: #FF6A6A;
+
+}
+
+.button_text{
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-decoration: none;
 }
 
 .margin_card{
     margin-right: 30px;
+}
+
+.aaa{
+    text-decoration: none;
 }
 
 .advantages_section{
@@ -120,10 +216,33 @@
     padding-bottom: 104px;
 }
 
-.free_delivery_block{
+.advantages_block{
     height: 100px;
     width: 360px;
     text-align: center;
+}
+
+.advantages_heading{
+    padding-top: 20px;
+
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 24px;
+    
+    
+    color: #FBFBFB;
+}
+
+.advantages_text{
+    padding-top: 16px;
+
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    
+    color: #FBFBFB;
 }
 
 .margin_block{
@@ -131,30 +250,134 @@
 }
 
 .lorem_block{
-    margin-top: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lorem_photo{
+    width: 96px;
 }
 
 .lorem_text{
     padding-top: 30px;
-    text-align: center;
     width: 360px;
+    text-align: center;
+    color: white;
 }
 
 .subscribe_section{
-    /* background: rgba(244, 244, 244, 0.7); */
-    background-image: url(images/subscribe_background.svg);
     display: flex;
     justify-content: space-between;
     padding-bottom: 156px;
+    padding-left: 230px;
+    padding-top: 150px;
+    align-items: top;
+    background: rgba(244, 244, 244, 0.7);
+    background: url(images/subscribe_background.svg);
+    
 }
 
 .subscribe_block{
-    margin-top: 150px;
+    margin-left: 230px;
+    margin-right: 230px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
+.mail_window_frame{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.mail_window{
+    position: absolute;
+    left: 22px;
+    font-family: Lato;
+
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #222224;
+
+    opacity: 0.67;
+    border: none;
+}
+
+.subscribe_text{
+    position: absolute;
+    left: 10px;
+    color: white;
+}
+
+.subscribe1{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.subscribe-image{
+    display: flex;
+}
+
+.subscribe_heading1{
+    text-align: center;
+    font-family: Lato;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 168%;
+    /* or 40px */
+    
+    color: #222224;
+}
+.subscribe_heading2{
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 168%;
+    
+    color: #222224;
+}
 
 .contacts_section{
-    height: 80px;
-    background-color:#222224;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
+.all_right_section{
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #FBFBFB;
+
+}
+
+.social_network{
+    
+}
+
+.all_product_button:hover{
+    background: #FF6A6A;
+}
+
+.all_product_button:hover .button_text{
+    color: white;
+}
+
+.sn:hover{
+    filter: brightness(20%)
+}
+
+.big_menu:hover{
+    opacity: 1;
+}
