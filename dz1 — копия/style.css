@@ -111,12 +111,56 @@
 
 .for_women, .for_men{
     margin-right: 30px;
+
 }
+
+
+
+.for_whom_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.for_whom_heading{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+}
+
+.for_whom_image{
+    filter: brightness(20%);
+    z-index: 0;
+}
+
+.first_for_whom_heading{
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: white;
+}
+
+.second_for_whom_heading{
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: palevioletred;
+}
+
 
 .accessories{
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
+}
+
+.featured_items_section{
+    padding-top: 96px;
 }
 
 .featured_items_header{
@@ -275,6 +319,7 @@
     align-items: top;
     background: rgba(244, 244, 244, 0.7);
     background: url(images/subscribe_background.svg);
+    height: 100%;
     
 }
 
