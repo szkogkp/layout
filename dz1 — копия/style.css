@@ -426,3 +426,16 @@
 .big_menu:hover{
     opacity: 1;
 }
+
+.breadcrumb_section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion{
+    width: 300px;
+}
+
+.product_middle{
+    display: flex;
+}
