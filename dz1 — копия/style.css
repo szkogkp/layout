@@ -189,8 +189,9 @@
 }
 
 .card{
-    flex-grow: 1;
+    flex: 1;
     background: #F8F8F8;
+    width: 360px;
 }
 
 .card_header{
@@ -430,12 +431,119 @@
 .breadcrumb_section{
     display: flex;
     justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #F8F3F4;
 }
 
-.accordion{
-    width: 300px;
+.new_arrivals{
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #F16D7F;
 }
 
-.product_middle{
+.breadcrumb-item{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #636363;   
+}
+
+.active_breadcrumb{
+    color: #F16D7F;
+}
+
+.big_product{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F7F7F7;
+}
+
+.arrow{
+    width: 47px;
+    height: 47px;
+}
+
+.product_description_section{
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding: 65px 250px;
+}
+
+.collection_heading{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #F16D7F;
+}
+
+.name_of_product{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    
+    color: #4D4D4D;
+
+    margin-top: 27px;
+}
+
+.description_text{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #5E5E5E;
+
+    margin-top: 48px;
+}
+
+.product_price{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #EF5B70;
+
+    margin-top: 32px;
+}
+
+.product_selection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.selector{
+    display: flex;
+    
+}
+
+.select{
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    border: none;
+    
+    color: #6F6E6E;
+}
+
+.catalog_section{
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagination_section{
+    margin-top:48px;
 }
