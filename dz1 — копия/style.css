@@ -4,7 +4,7 @@
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1440px;
   padding-right: 230px;
   padding-left: 230px;
 }
@@ -61,7 +61,7 @@
   font-family: Lato;
   font-style: normal;
   font-size: 32px;
-  weight: 900;
+  font-weight: 900;
   color: #222222;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,5 +616,144 @@
 
 .filter_section_element {
   padding: 14px;
+}
+
+.registration_middle_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.input_section, .loyalty_perks_section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.name_input_heading {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.name_input, .login_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.male-female {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 31px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.male, .female {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input_section {
+  margin-right: 130px;
+}
+
+.input_place {
+  margin-top: 20px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.password_requriements {
+  margin-top: 15px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+
+.login_mod {
+  margin-top: 30px;
+}
+
+.loyalty_heading {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.loyalty_paragraph {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.loyalty_ol {
+  list-style: none;
+}
+
+.loyalty_li {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.galochka {
+  margin-right: 10px;
+}
+
+.join_now_button {
+  padding: 15px;
+  background: #F16D7F;
+  color: white;
+  width: 167px;
+}
+
+.join_now_a {
+  text-decoration: none;
+}
+
+.arrow_rigth {
+  height: 25px;
+  margin-left: 15px;
+}
+
+.loyalty_perks_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=style.css.map */
