@@ -5,6 +5,27 @@
 
 $mainColor: #F16D7F;
 
+%text_style{
+    font-family: Lato;
+    font-weight: 300;
+    line-height: 120%;
+    text-align: center;
+}
+
+%dfjcc{
+    display: flex;
+    justify-content: center;
+}
+
+%dfjcsb{
+    display: flex;
+    justify-content: space-between;
+}
+
+%dfdc{
+    display: flex;
+    flex-direction: column;
+}
 
 .container{
     max-width: 1440px;
@@ -12,15 +33,101 @@ $mainColor: #F16D7F;
     padding-left: 230px;
 }
 
-.center_container{
-    padding:0 auto;
+.subscribe1{
+    width: 100%;
+    position: relative;
+    @extend %dfjcc;
+}
+
+.breadcrumb_section{
+    @extend %dfjcsb;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background: #F8F3F4;
+}
+
+.male-female{
+    display: flex;
+    margin-top: 31px;
+    align-items: center;
+}
+
+.loyalty_perks_section{
+    @extend %dfdc;
+    align-items: flex-start;
+}
+
+.product_description_section{
+    text-align: center;
+    padding: 65px 250px;
+}
+    
+.registration_middle_section{
+    display: flex;
+    padding-top: 65px;
+    padding-bottom: 96px;
+}
+
+.input_section, .loyalty_perks_section{
+    flex:1;
+
+    @extend %dfdc;
+
+}
+
+.input_section{
+    margin-right: 130px;
+}
+
+.catalog_section{
+    padding-bottom: 96px;
+    @extend %dfdc;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.pagination_section{
+    margin-top:48px;
+}
+
+.filter_section{
+    @extend %dfjcc;
+    position: relative;
+}
+
+.big_menu:hover{
+    opacity: 1;
+}
+
+.contacts_section{
+    @extend %dfjcsb;
+
+    align-items: center;
+    background: black;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+    
+.all_right_section{
+    @extend %text_style;
+    font-size: 16px;
+    color: #FBFBFB;
+
+}
+
+.margin_block{
+    margin-right: 30px;
+}
+
+.lorem_block{
+    @extend %dfdc;
+    align-items: center;
 }
 
 .menu_section{
     background-color: black;
-
-    display: flex;
-    justify-content:space-between;
+    @extend %dfjcsb;
 
     align-items: center;
     height: 75px;
@@ -28,6 +135,128 @@ $mainColor: #F16D7F;
 
 .left_menu_section,.right_menu_section{
     display: flex;
+}
+
+.main_image_section{
+    background-color:#F1E4E6;
+    display: flex;
+    height: 100%;   
+}
+
+.middle_section{
+    background-color: white;
+}
+
+.for_whom_section{
+    padding-top: 65px;
+
+    @extend %dfjcsb;
+}
+    
+.card_header{
+    @extend %text_style;
+    font-size: 13px;
+    
+    margin-top: 25px;
+    margin-bottom: 13px;
+    color: #000000;
+}
+.featured_items_section{
+    padding-top: 96px;
+}
+.big_menu{
+    background: white;
+    height: 100%;
+    padding-bottom:150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 37px;
+    opacity: 0;
+    position: relative;
+}
+
+.advantages_block{
+    height: 100px;
+    width: 360px;
+    text-align: center;
+}
+
+.accessories{
+    margin-top: 30px;
+    @extend %dfjcsb;
+}
+
+.advantages_section{
+    background-color:#222224;
+    padding-top: 104px;
+
+    @extend %dfjcsb;
+
+    padding-bottom: 104px;
+}
+
+.subscribe_section{
+
+    @extend %dfjcsb;
+
+    padding-bottom: 156px;
+    padding-left: 230px;
+    padding-top: 150px;
+    align-items: top;
+    background: rgba(244, 244, 244, 0.7);
+    background: url(images/subscribe_background.svg);
+    height: 100%;
+    
+}
+
+.subscribe_block{
+    margin-left: 230px;
+    margin-right: 230px;
+    @extend %dfdc;
+    
+}
+
+.mail_window_frame{
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.mail_window{
+    position: absolute;
+    left: 22px;
+    
+    @extend %text_style;
+    font-size: 14px;
+    color: #222224;
+
+    opacity: 0.67;
+    border: none;
+}
+
+.subscribe-image{
+    display: flex;
+}
+
+.for_whom_image{
+    filter: brightness(20%);
+    z-index: 0;
+}
+.lorem_photo{
+    width: 96px;
+}
+
+
+
+.arrow{
+    width: 47px;
+    height: 47px;
+}
+
+.sn:hover{
+    filter: brightness(20%)
 }
 
 .logo{
@@ -45,15 +274,158 @@ $mainColor: #F16D7F;
 .drop_down,.account{
     margin-right: 33px;
 }
-.main_image_section{
-    background-color:#F1E4E6;
-    display: flex;
-    height: 100%;   
+
+.krestik{
+    position: absolute;
+    top: 16px;
+    right: 16px;
 }
 
+.galochka{
+    margin-right: 10px;
+}
+
+.arrow_rigth{
+    height: 25px;
+    margin-left: 15px;
+}
+
+.advantages_heading{
+    padding-top: 20px;
+
+    @extend %text_style;
+    font-size: 20px;
+    
+    
+    color: #FBFBFB;
+}
+
+.advantages_text{
+    padding-top: 16px;
+
+    @extend %dfjcc;
+    font-size: 14px;
+    color: #FBFBFB;
+}
+
+.input_place{
+    margin-top: 20px;
+
+    @extend %textstyle;
+    color: #B1B1B1;
+    font-size: 13px;
+}
+
+.password_requriements{
+    margin-top: 15px;
+
+    @extend %textstyle;
+    color: #B1B1B1;
+    font-size: 13px;
+}
+
+.name_input_heading{
+
+    @extend %textstyle;
+    color: #222222;
+    font-size: 16px;
+
+}
+
+.select{
+    @extend %textstyle;
+    font-size: 14px;
+    color: #6F6E6E;
+}
+
+.loyalty_heading{
+    @extend %textstyle;
+    font-size: 24px;
+
+}
+
+.loyalty_paragraph{
+    @extend %textstyle;
+    font-size: 24px;
+}
+
+.new_arrivals{
+    @extend %textstyle;
+    font-size: 24px;
+    color: $mainColor;
+}
+
+.breadcrumb-item{
+    @extend %textstyle;
+    font-size: 14px;
+    color: #636363;   
+}
+
+.active_breadcrumb{
+    @extend %textstyle;
+    color: $mainColor;
+}
+
+.collection_heading{
+    @extend %textstyle;
+    font-size: 14px;
+    color: $mainColor;
+}
+
+.name_of_product{
+    @extend %textstyle;
+    font-size: 18px;
+    color: #4D4D4D;
+
+    margin-top: 27px;
+}
+
+.description_text{
+    @extend %textstyle;
+    font-size: 14px;
+    color: #5E5E5E;
+
+    margin-top: 48px;
+}
+
+.product_price{
+    @extend %textstyle;
+    font-size: 24px;
+    color: $mainColor;
+
+    margin-top: 32px;
+}
+
+.subscribe_heading1{
+
+    @extend %textstyle;
+    font-size: 24px;
+    color: #222224;
+
+}
+.subscribe_heading2{
+    @extend %textstyle;
+    font-size: 24px;
+    color: #222224;
+}
+
+.lorem_text{
+
+    padding-top: 30px;
+    width: 360px;
+
+    @extend %textstyle;
+    color: white;
+}
+.subscribe_text{
+    position: absolute;
+    left: 10px;
+
+    @extend %textstyle;
+    color: white;
+}
 .main_image_text{
-    font-family: Lato;
-    font-style: normal;
+    @extend %textstyle;
     font-size: 32px;
     font-weight: 900;
 
@@ -65,54 +437,79 @@ $mainColor: #F16D7F;
     padding-top: 300px;
     padding-right: 200px;
 }
+.for_whom_heading{
+    @extend %textstyle;
 
-.big_menu{
-    background: white;
-    height: 100%;
-    padding-bottom:150px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 37px;
-    opacity: 0;
-    position: relative;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+}
+.first_for_whom_heading{
+    @extend %textstyle;
+    font-size: 16px;
+    color: white;
+}
+.second_for_whom_heading{
+    @extend %textstyle;
+    font-size: 16px;
+    color:$mainColor;
+}
+.featured_items_header{
+
+    @extend %textstyle;
+    font-size: 30px;
+    color: #222222;
+}
+.featured_items_paragraph{
+
+    @extend %textstyle;
+    font-size: 14px;
+    color: #9F9F9F;
 }
 
-.krestik{
-    position: absolute;
-    top: 16px;
-    right: 16px;
+.card_paragraph{
+    @extend %textstyle;
+    font-size: 14px;
+    color: #5D5D5D;
+}
+.card_price{
+    @extend %textstyle;
+    color: $mainColor;
+    font-size: 16px;
+    
+    margin-top: 18px;
+}
+.button_text{
+    @extend %textstyle;
+    font-size: 16px;
+    color: $mainColor;
+}
+
+.loyalty_ol{
+    list-style: none;
 }
 .first_li{
-    font-family: Lato;
+    @extend %textstyle;
     font-size: 14px;
-    line-height: 17px;
-    /* identical to box height */
     color:$mainColor;
-    list-style-type: none;
+
+    list-style: none;
 }
 
 .second_li{
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
+    @extend %textstyle;
     font-size: 14px;
-    line-height: 17px;
     padding-left: 15px;
-    /* identical to box height */
-    
     
     color: #6F6E6E;
-    list-style-type: none;
+    list-style: none;
 }
 
-.middle_section{
-    background-color: white;
-}
-
-.for_whom_section{
-    padding-top: 65px;
-    display: flex;
-    justify-content: space-around;
+.loyalty_li{
+    @extend %textstyle;
+    font-size: 24px;
 }
 
 .for_women, .for_men{
@@ -120,78 +517,15 @@ $mainColor: #F16D7F;
 
 }
 
-
-
 .for_whom_card{
-    display: flex;
-    justify-content: center;
+    @extend %dfjcc;
     align-items: center;
     position: relative;
 }
 
-.for_whom_heading{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    text-align: center;
-    z-index: 1;
-}
-
-.for_whom_image{
-    filter: brightness(20%);
-    z-index: 0;
-}
-
-.first_for_whom_heading{
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 19px;
-    
-    color: white;
-}
-
-.second_for_whom_heading{
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 19px;
-    
-    color:$mainColor;
-}
-
-
-.accessories{
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.featured_items_section{
-    padding-top: 96px;
-}
-
-.featured_items_header{
-    text-align: center;
-    font-family: Lato;
-    font-size: 30px;
-    line-height: 36px;
-    
-    
-    color: #222222;
-}
-
-.featured_items_paragraph{
-    text-align: center;
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 17px;
-
-    color: #9F9F9F;
-}
-
 .cards{
     margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
+    @extend %dfjcsb;
 }
 
 .card{
@@ -200,460 +534,8 @@ $mainColor: #F16D7F;
     width: 360px;
 }
 
-.card_header{
-    font-family: Lato;
-    font-size: 13px;
-    line-height: 16px;
-    
-    margin-top: 25px;
-    margin-bottom: 13px;
-    color: #000000;
-}
-
-.card_paragraph{
-    font-family: Lato;
-
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    
-    color: #5D5D5D;
-}
-
-.card_price{
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 19px;
-    
-    margin-top: 18px;
-    color: $mainColor;
-
-}
-
-.all_product_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 48px auto 95px;
-    padding: 14px 39px;
-    border: 1px solid $mainColor;
-    width: 210px;
-
-    color: $mainColor;
-
-}
-
-.button_text{
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 19px;
-    color: $mainColor;
-    text-decoration: none;
-}
-
 .margin_card{
     margin-right: 30px;
-}
-
-.aaa{
-    text-decoration: none;
-}
-
-.advantages_section{
-    background-color:#222224;
-    padding-top: 104px;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 104px;
-}
-
-.advantages_block{
-    height: 100px;
-    width: 360px;
-    text-align: center;
-}
-
-.advantages_heading{
-    padding-top: 20px;
-
-    font-family: Lato;
-    font-size: 20px;
-    line-height: 24px;
-    
-    
-    color: #FBFBFB;
-}
-
-.advantages_text{
-    padding-top: 16px;
-
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    
-    color: #FBFBFB;
-}
-
-.margin_block{
-    margin-right: 30px;
-}
-
-.lorem_block{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lorem_photo{
-    width: 96px;
-}
-
-.lorem_text{
-    padding-top: 30px;
-    width: 360px;
-    text-align: center;
-    color: white;
-}
-
-.subscribe_section{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 156px;
-    padding-left: 230px;
-    padding-top: 150px;
-    align-items: top;
-    background: rgba(244, 244, 244, 0.7);
-    background: url(images/subscribe_background.svg);
-    height: 100%;
-    
-}
-
-.subscribe_block{
-    margin-left: 230px;
-    margin-right: 230px;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.mail_window_frame{
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.mail_window{
-    position: absolute;
-    left: 22px;
-    font-family: Lato;
-
-    font-size: 14px;
-    line-height: 17px;
-
-    color: #222224;
-
-    opacity: 0.67;
-    border: none;
-}
-
-.subscribe_text{
-    position: absolute;
-    left: 10px;
-    color: white;
-}
-
-.subscribe1{
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-
-}
-
-.subscribe-image{
-    display: flex;
-}
-
-.subscribe_heading1{
-    text-align: center;
-    font-family: Lato;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 168%;
-    /* or 40px */
-    
-    color: #222224;
-}
-.subscribe_heading2{
-    text-align: center;
-    font-family: Lato;
-    font-size: 24px;
-    line-height: 168%;
-    
-    color: #222224;
-}
-
-.contacts_section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: black;
-
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.all_right_section{
-    font-family: Lato;
-    font-size: 16px;
-    line-height: 19px;
-    
-    color: #FBFBFB;
-
-}
-
-.all_product_button:hover{
-    background: $mainColor;
-}
-
-.all_product_button:hover .button_text{
-    color: white;
-}
-
-.sn:hover{
-    filter: brightness(20%)
-}
-
-.big_menu:hover{
-    opacity: 1;
-}
-
-.breadcrumb_section{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: #F8F3F4;
-}
-
-.new_arrivals{
-    font-family: Lato;
-    font-size: 24px;
-    line-height: 29px;
-    
-    color: $mainColor;
-}
-
-.breadcrumb-item{
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    
-    color: #636363;   
-}
-
-.active_breadcrumb{
-    color: $mainColor;
-}
-
-.big_product{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #F7F7F7;
-}
-
-.arrow{
-    width: 47px;
-    height: 47px;
-}
-
-.product_description_section{
-    text-align: center;
-    padding-top: 65px;
-    padding-bottom: 65px;
-    padding: 65px 250px;
-}
-
-.collection_heading{
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    
-    color: $mainColor;
-}
-
-.name_of_product{
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
-    
-    color: #4D4D4D;
-
-    margin-top: 27px;
-}
-
-.description_text{
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    
-    color: #5E5E5E;
-
-    margin-top: 48px;
-}
-
-.product_price{
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    
-    color: $mainColor;
-
-    margin-top: 32px;
-}
-
-.product_selection{
-    display: flex;
-    justify-content: center;
-}
-
-.selector{
-    display: flex;
-    padding: 11px;
-}
-
-.select{
-    font-family: Lato;
-    font-size: 14px;
-    line-height: 17px;
-    border: none;
-    
-    color: #6F6E6E;
-}
-
-.catalog_section{
-    padding-bottom: 96px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 50px;
-}
-
-.pagination_section{
-    margin-top:48px;
-}
-
-
-.filter_section{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-}
-
-.filter_section_element{
-    padding: 14px;
-}
-
-.registration_middle_section{
-    display: flex;
-    padding-top: 64px;
-    padding-bottom: 96px;
-}
-
-.input_section, .loyalty_perks_section{
-    flex:1;
-    display: flex;
-    flex-direction: column;
-}
-
-.name_input_heading{
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    
-    color: #222222;
-}
-
-.name_input, .login_details{
-    display: flex;
-    flex-direction: column;
-}
-
-.male-female{
-    display: flex;
-    margin-top: 31px;
-    align-items: center;
-}
-
-.male, .female{
-    display: flex;
-}
-
-.input_section{
-    margin-right: 130px;
-}
-
-.input_place{
-    margin-top: 20px;
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
-    
-    
-    color: #B1B1B1;
-}
-
-.password_requriements{
-    margin-top: 15px;
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 16px;
-    
-    color: #B1B1B1;
-}
-
-.login_mod{
-    margin-top: 30px;
-}
-
-.loyalty_heading{
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.loyalty_paragraph{
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.loyalty_ol{
-    list-style: none;
-}
-
-.loyalty_li{
-    font-family: Lato;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-}
-
-.galochka{
-    margin-right: 10px;
 }
 
 .join_now_button{
@@ -663,17 +545,55 @@ $mainColor: #F16D7F;
     width: 167px;
 }
 
+.all_product_button:hover .button_text{
+    color: white;
+}
+.all_product_button:hover{
+    background: $mainColor;
+}
+.all_product_button{
+    @extend %dfjcc;
+    align-items: center;
+
+    margin: 48px auto 95px;
+    padding: 14px 39px;
+    border: 1px solid $mainColor;
+    width: 210px;
+
+    color: $mainColor;
+
+}
+.aaa{
+    text-decoration: none;
+}
 .join_now_a{
     text-decoration: none;
 }
 
-.arrow_rigth{
-    height: 25px;
-    margin-left: 15px;
+.big_product{
+    @extend %dfjcsb;
+    align-items: center;
+    background: #F7F7F7;
 }
 
-.loyalty_perks_section{
+
+.product_selection{
+    @extend %dfjcc;
+}
+
+.selector{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 11px;
+}
+
+.filter_section_element{
+    padding: 14px;
+}
+
+.male, .female{
+    display: flex;
+}
+
+.login_mod{
+    margin-top: 30px;
 }
