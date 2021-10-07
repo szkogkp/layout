@@ -5,42 +5,83 @@
 
 $mainColor: #F16D7F;
 
-%text_style{
+.text_style{
     font-family: Lato;
     font-weight: 300;
     line-height: 120%;
     text-align: center;
 }
 
-%dfjcc{
+.dfjcc{
     display: flex;
     justify-content: center;
 }
 
-%dfjcsb{
+.dfjcsb{
     display: flex;
     justify-content: space-between;
 }
 
-%dfdc{
+.dfdc{
     display: flex;
     flex-direction: column;
 }
 
+.elch{
+    transition: all 2s;
+}
+
 .container{
     max-width: 1440px;
-    padding-right: 230px;
+    margin: 0 auto;
     padding-left: 230px;
+    padding-right: 230px;
 }
+
+
+
+.menu_element{
+    @extend .elch;
+}
+
+.sn{
+    @extend .elch;
+}
+
+.all_product_button{
+    @extend .elch;
+}
+
+.aaa, .join_now_a{
+    text-decoration: none;
+}
+
+.menu_element:hover, .sn:hover, .aaa:hover, .join_now_button:hover, .all_product_button:hover, .card:hover, .for_whom_card:hover{
+    transform: scale(1.2,1.2);
+}
+
+.card, .for_whom_card{
+    @extend .elch;
+}
+
+
+.join_now_button{
+    padding: 15px;
+    background: #F16D7F;
+    color: white;
+    width: 167px;
+    @extend .elch;
+}
+
 
 .subscribe1{
     width: 100%;
     position: relative;
-    @extend %dfjcc;
+    @extend .dfjcc;
 }
 
 .breadcrumb_section{
-    @extend %dfjcsb;
+    @extend .dfjcsb;
     padding-top: 65px;
     padding-bottom: 65px;
     background: #F8F3F4;
@@ -53,7 +94,7 @@ $mainColor: #F16D7F;
 }
 
 .loyalty_perks_section{
-    @extend %dfdc;
+    @extend .dfdc;
     align-items: flex-start;
 }
 
@@ -71,7 +112,7 @@ $mainColor: #F16D7F;
 .input_section, .loyalty_perks_section{
     flex:1;
 
-    @extend %dfdc;
+    @extend .dfdc;
 
 }
 
@@ -81,7 +122,7 @@ $mainColor: #F16D7F;
 
 .catalog_section{
     padding-bottom: 96px;
-    @extend %dfdc;
+    @extend .dfdc;
     align-items: center;
     padding-top: 50px;
 }
@@ -91,7 +132,7 @@ $mainColor: #F16D7F;
 }
 
 .filter_section{
-    @extend %dfjcc;
+    @extend .dfjcc;
     position: relative;
 }
 
@@ -100,7 +141,7 @@ $mainColor: #F16D7F;
 }
 
 .contacts_section{
-    @extend %dfjcsb;
+    @extend .dfjcsb;
 
     align-items: center;
     background: black;
@@ -110,7 +151,7 @@ $mainColor: #F16D7F;
 }
     
 .all_right_section{
-    @extend %text_style;
+    @extend .text_style;
     font-size: 16px;
     color: #FBFBFB;
 
@@ -121,13 +162,13 @@ $mainColor: #F16D7F;
 }
 
 .lorem_block{
-    @extend %dfdc;
+    @extend .dfdc;
     align-items: center;
 }
 
 .menu_section{
     background-color: black;
-    @extend %dfjcsb;
+    @extend .dfjcsb;
 
     align-items: center;
     height: 75px;
@@ -150,11 +191,11 @@ $mainColor: #F16D7F;
 .for_whom_section{
     padding-top: 65px;
 
-    @extend %dfjcsb;
+    @extend .dfjcsb;
 }
     
 .card_header{
-    @extend %text_style;
+    @extend .text_style;
     font-size: 13px;
     
     margin-top: 25px;
@@ -183,21 +224,21 @@ $mainColor: #F16D7F;
 
 .accessories{
     margin-top: 30px;
-    @extend %dfjcsb;
+    @extend .dfjcsb;
 }
 
 .advantages_section{
     background-color:#222224;
     padding-top: 104px;
 
-    @extend %dfjcsb;
+    @extend .dfjcsb;
 
     padding-bottom: 104px;
 }
 
 .subscribe_section{
 
-    @extend %dfjcsb;
+    @extend .dfjcsb;
 
     padding-bottom: 156px;
     padding-left: 230px;
@@ -212,7 +253,7 @@ $mainColor: #F16D7F;
 .subscribe_block{
     margin-left: 230px;
     margin-right: 230px;
-    @extend %dfdc;
+    @extend .dfdc;
     
 }
 
@@ -228,7 +269,7 @@ $mainColor: #F16D7F;
     position: absolute;
     left: 22px;
     
-    @extend %text_style;
+    @extend .text_style;
     font-size: 14px;
     color: #222224;
 
@@ -258,6 +299,7 @@ $mainColor: #F16D7F;
 .sn:hover{
     filter: brightness(20%)
 }
+
 
 .logo{
     margin-right: 41px;
@@ -293,7 +335,7 @@ $mainColor: #F16D7F;
 .advantages_heading{
     padding-top: 20px;
 
-    @extend %text_style;
+    @extend .text_style;
     font-size: 20px;
     
     
@@ -303,7 +345,7 @@ $mainColor: #F16D7F;
 .advantages_text{
     padding-top: 16px;
 
-    @extend %dfjcc;
+    @extend .dfjcc;
     font-size: 14px;
     color: #FBFBFB;
 }
@@ -311,7 +353,7 @@ $mainColor: #F16D7F;
 .input_place{
     margin-top: 20px;
 
-    @extend %textstyle;
+    @extend .text_style;
     color: #B1B1B1;
     font-size: 13px;
 }
@@ -319,61 +361,61 @@ $mainColor: #F16D7F;
 .password_requriements{
     margin-top: 15px;
 
-    @extend %textstyle;
+    @extend .text_style;
     color: #B1B1B1;
     font-size: 13px;
 }
 
 .name_input_heading{
 
-    @extend %textstyle;
+    @extend .text_style;
     color: #222222;
     font-size: 16px;
 
 }
 
 .select{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 14px;
     color: #6F6E6E;
 }
 
 .loyalty_heading{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 24px;
 
 }
 
 .loyalty_paragraph{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 24px;
 }
 
 .new_arrivals{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 24px;
     color: $mainColor;
 }
 
 .breadcrumb-item{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 14px;
     color: #636363;   
 }
 
 .active_breadcrumb{
-    @extend %textstyle;
+    @extend .text_style;
     color: $mainColor;
 }
 
 .collection_heading{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 14px;
     color: $mainColor;
 }
 
 .name_of_product{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 18px;
     color: #4D4D4D;
 
@@ -381,7 +423,7 @@ $mainColor: #F16D7F;
 }
 
 .description_text{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 14px;
     color: #5E5E5E;
 
@@ -389,7 +431,7 @@ $mainColor: #F16D7F;
 }
 
 .product_price{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 24px;
     color: $mainColor;
 
@@ -398,13 +440,13 @@ $mainColor: #F16D7F;
 
 .subscribe_heading1{
 
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 24px;
     color: #222224;
 
 }
 .subscribe_heading2{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 24px;
     color: #222224;
 }
@@ -414,18 +456,18 @@ $mainColor: #F16D7F;
     padding-top: 30px;
     width: 360px;
 
-    @extend %textstyle;
+    @extend .text_style;
     color: white;
 }
 .subscribe_text{
     position: absolute;
     left: 10px;
 
-    @extend %textstyle;
+    @extend .text_style;
     color: white;
 }
 .main_image_text{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 32px;
     font-weight: 900;
 
@@ -438,7 +480,7 @@ $mainColor: #F16D7F;
     padding-right: 200px;
 }
 .for_whom_heading{
-    @extend %textstyle;
+    @extend .text_style;
 
     display: flex;
     position: absolute;
@@ -447,42 +489,42 @@ $mainColor: #F16D7F;
     z-index: 1;
 }
 .first_for_whom_heading{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 16px;
     color: white;
 }
 .second_for_whom_heading{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 16px;
     color:$mainColor;
 }
 .featured_items_header{
 
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 30px;
     color: #222222;
 }
 .featured_items_paragraph{
 
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 14px;
     color: #9F9F9F;
 }
 
 .card_paragraph{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 14px;
     color: #5D5D5D;
 }
 .card_price{
-    @extend %textstyle;
+    @extend .text_style;
     color: $mainColor;
     font-size: 16px;
     
     margin-top: 18px;
 }
 .button_text{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 16px;
     color: $mainColor;
 }
@@ -491,7 +533,7 @@ $mainColor: #F16D7F;
     list-style: none;
 }
 .first_li{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 14px;
     color:$mainColor;
 
@@ -499,7 +541,7 @@ $mainColor: #F16D7F;
 }
 
 .second_li{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 14px;
     padding-left: 15px;
     
@@ -508,7 +550,7 @@ $mainColor: #F16D7F;
 }
 
 .loyalty_li{
-    @extend %textstyle;
+    @extend .text_style;
     font-size: 24px;
 }
 
@@ -518,15 +560,20 @@ $mainColor: #F16D7F;
 }
 
 .for_whom_card{
-    @extend %dfjcc;
+    @extend .dfjcc;
     align-items: center;
     position: relative;
 }
 
 .cards{
     margin-top: 30px;
-    @extend %dfjcsb;
+    @extend .dfjcsb;
 }
+
+.margin_card{
+    margin-right: 30px;
+}
+
 
 .card{
     flex: 1;
@@ -534,25 +581,11 @@ $mainColor: #F16D7F;
     width: 360px;
 }
 
-.margin_card{
-    margin-right: 30px;
-}
-
-.join_now_button{
-    padding: 15px;
-    background: #F16D7F;
-    color: white;
-    width: 167px;
-}
-
-.all_product_button:hover .button_text{
-    color: white;
-}
 .all_product_button:hover{
     background: $mainColor;
 }
 .all_product_button{
-    @extend %dfjcc;
+    @extend .dfjcc;
     align-items: center;
 
     margin: 48px auto 95px;
@@ -563,22 +596,16 @@ $mainColor: #F16D7F;
     color: $mainColor;
 
 }
-.aaa{
-    text-decoration: none;
-}
-.join_now_a{
-    text-decoration: none;
-}
 
 .big_product{
-    @extend %dfjcsb;
+    @extend .dfjcsb;
     align-items: center;
     background: #F7F7F7;
 }
 
 
 .product_selection{
-    @extend %dfjcc;
+    @extend .dfjcc;
 }
 
 .selector{
