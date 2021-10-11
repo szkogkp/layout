@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.text_style, .all_right_section, .card_header, .mail_window, .advantages_heading, .input_place, .password_requriements, .name_input_heading, .select, .loyalty_heading, .loyalty_paragraph, .new_arrivals, .breadcrumb-item, .active_breadcrumb, .collection_heading, .name_of_product, .description_text, .product_price, .subscribe_heading1, .subscribe_heading2, .lorem_text, .subscribe_text, .main_image_text, .for_whom_heading, .first_for_whom_heading, .second_for_whom_heading, .featured_items_header, .featured_items_paragraph, .card_paragraph, .card_price, .button_text, .first_li, .second_li, .loyalty_li {
+.text_style, .all_right_section, .card_header, .email_input, .email_input_button, .advantages_heading, .input_place, .password_requriements, .name_input_heading, .select, .loyalty_heading, .loyalty_paragraph, .new_arrivals, .breadcrumb-item, .active_breadcrumb, .collection_heading, .name_of_product, .description_text, .product_price, .subscribe_heading1, .subscribe_heading2, .lorem_text, .subscribe_text, .main_image_text, .for_whom_heading, .first_for_whom_heading, .second_for_whom_heading, .featured_items_header, .featured_items_paragraph, .card_paragraph, .card_price, .button_text, .first_li, .second_li, .loyalty_li {
   font-family: Lato;
   font-weight: 300;
   line-height: 120%;
@@ -246,7 +246,10 @@
 }
 
 .subscribe_section {
-  padding-top: 150px;
+  padding-top: 87px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .subscribe_item {
@@ -255,33 +258,37 @@
 }
 
 .subscribe_block {
-  margin-left: 230px;
-  margin-right: 230px;
-}
-
-.mail_window_frame {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
-.mail_window {
-  position: absolute;
-  left: 22px;
-  font-size: 14px;
-  color: #222224;
-  opacity: 0.67;
-  border: none;
-}
-
-.subscribe-image {
+.email_window_frame {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 30px;
+}
+
+.email_input_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+.email_input {
+  border-radius: 25% 0 0 25%;
+  border: none;
+  padding: 7px;
+}
+
+.email_input_button {
+  background: #F16D7F;
+  border: none;
+  color: white;
+  border-radius: 0 25% 25% 0;
+  padding: 7px;
 }
 
 .for_whom_image {
@@ -427,7 +434,7 @@
 .lorem_text {
   padding-top: 30px;
   width: 360px;
-  color: white;
+  color: black;
 }
 
 .subscribe_text {
@@ -564,6 +571,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.big_product_item {
   background: #F7F7F7;
 }
 
