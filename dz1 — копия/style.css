@@ -19,7 +19,7 @@
           justify-content: center;
 }
 
-.dfjcsb, .breadcrumb_section, .contacts_section, .menu_section, .for_whom_section, .accessories, .advantages_section, .subscribe_section, .cards, .big_product {
+.dfjcsb, .breadcrumb_section, .contacts_section, .menu_section, .for_whom_section, .accessories, .advantages_section, .subscribe_section, .cards, .big_product, .cart_middle, .button_b {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,15 +39,23 @@
 }
 
 .elch, .menu_element, .sn, .all_product_button, .card, .for_whom_card, .join_now_button {
-  -webkit-transition: all 2s;
-  transition: all 2s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1160px;
+  width: 100%;
   margin: 0 auto;
-  padding-left: 230px;
-  padding-right: 230px;
+  padding: 0 10px;
+}
+
+.menu_item {
+  background: black;
+}
+
+.main_image_item {
+  background: #F1E4E6;
 }
 
 .aaa, .join_now_a {
@@ -55,8 +63,8 @@
 }
 
 .menu_element:hover, .sn:hover, .aaa:hover, .join_now_button:hover, .all_product_button:hover, .card:hover, .for_whom_card:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .join_now_button {
@@ -74,6 +82,9 @@
 .breadcrumb_section {
   padding-top: 65px;
   padding-bottom: 65px;
+}
+
+.breadcrumb_item {
   background: #F8F3F4;
 }
 
@@ -140,9 +151,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: black;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.contact_item {
+  background: black;
 }
 
 .all_right_section {
@@ -223,21 +237,21 @@
 }
 
 .advantages_section {
-  background-color: #222224;
   padding-top: 104px;
   padding-bottom: 104px;
 }
 
+.advantages_item {
+  background-color: #222224;
+}
+
 .subscribe_section {
-  padding-bottom: 156px;
-  padding-left: 230px;
   padding-top: 150px;
-  -webkit-box-align: top;
-      -ms-flex-align: top;
-          align-items: top;
-  background: rgba(244, 244, 244, 0.7);
+}
+
+.subscribe_item {
   background: url(images/subscribe_background.svg);
-  height: 100%;
+  padding-bottom: 130px;
 }
 
 .subscribe_block {
@@ -572,5 +586,22 @@
 
 .login_mod {
   margin-top: 30px;
+}
+
+.clear_cart_button, .continue_shopping_button {
+  border: 1px solid black;
+}
+
+.shopping_adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
