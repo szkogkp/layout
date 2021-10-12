@@ -64,14 +64,36 @@ $mainColor: #F16D7F;
     text-decoration: none;
 }
 
-.menu_element:hover, .sn:hover, .aaa:hover, .join_now_button:hover, .all_product_button:hover, .card:hover, .for_whom_card:hover{
+.menu_element:hover, .sn:hover, .aaa:hover, .join_now_button:hover, .all_product_button:hover, .for_whom_card:hover{
     transform: scale(1.1,1.1);
+}
+
+.card:hover{
+    filter: brightness(50%);
 }
 
 .card, .for_whom_card{
     @extend .elch;
 }
 
+.card_item{
+    display: flex;
+    position: relative;
+}
+
+.cart_in_card{
+    position: absolute;
+    align-self: center;
+    
+    background:none;
+    width: 50px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.cart_in_card:hover{
+    background: white;
+}
 
 .join_now_button{
     padding: 15px;
@@ -375,6 +397,8 @@ $mainColor: #F16D7F;
     margin-top: 20px;
 
     @extend .text_style;
+    text-align: none;
+    height: 45px;
     color: #B1B1B1;
     font-size: 13px;
 }
@@ -383,6 +407,7 @@ $mainColor: #F16D7F;
     margin-top: 15px;
 
     @extend .text_style;
+    text-align: left;
     color: #B1B1B1;
     font-size: 13px;
 }
@@ -390,9 +415,15 @@ $mainColor: #F16D7F;
 .name_input_heading{
 
     @extend .text_style;
+    text-align: left;
     color: #222222;
     font-size: 16px;
 
+}
+
+.name_input, .login_details{
+    display: flex;
+    flex-direction: column;
 }
 
 .select{
@@ -409,6 +440,7 @@ $mainColor: #F16D7F;
 
 .loyalty_paragraph{
     @extend .text_style;
+    text-align: left;
     font-size: 24px;
 }
 
@@ -572,6 +604,7 @@ $mainColor: #F16D7F;
 
 .loyalty_li{
     @extend .text_style;
+    text-align: left;
     font-size: 24px;
 }
 
@@ -643,6 +676,15 @@ $mainColor: #F16D7F;
 
 .male, .female{
     display: flex;
+}
+
+.male{
+    margin-right: 20px;
+}
+
+.male_text{
+    @extend .text_style;
+    font-size: 11px;
 }
 
 .login_mod{

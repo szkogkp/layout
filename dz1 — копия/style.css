@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.text_style, .all_right_section, .card_header, .email_input, .email_input_button, .advantages_heading, .input_place, .password_requriements, .name_input_heading, .select, .loyalty_heading, .loyalty_paragraph, .new_arrivals, .breadcrumb-item, .active_breadcrumb, .collection_heading, .name_of_product, .description_text, .product_price, .subscribe_heading1, .subscribe_heading2, .lorem_text, .subscribe_text, .main_image_text, .for_whom_heading, .first_for_whom_heading, .second_for_whom_heading, .featured_items_header, .featured_items_paragraph, .card_paragraph, .card_price, .button_text, .first_li, .second_li, .loyalty_li {
+.text_style, .all_right_section, .card_header, .email_input, .email_input_button, .advantages_heading, .input_place, .password_requriements, .name_input_heading, .select, .loyalty_heading, .loyalty_paragraph, .new_arrivals, .breadcrumb-item, .active_breadcrumb, .collection_heading, .name_of_product, .description_text, .product_price, .subscribe_heading1, .subscribe_heading2, .lorem_text, .subscribe_text, .main_image_text, .for_whom_heading, .first_for_whom_heading, .second_for_whom_heading, .featured_items_header, .featured_items_paragraph, .card_paragraph, .card_price, .button_text, .first_li, .second_li, .loyalty_li, .male_text {
   font-family: Lato;
   font-weight: 300;
   line-height: 120%;
@@ -62,9 +62,36 @@
   text-decoration: none;
 }
 
-.menu_element:hover, .sn:hover, .aaa:hover, .join_now_button:hover, .all_product_button:hover, .card:hover, .for_whom_card:hover {
+.menu_element:hover, .sn:hover, .aaa:hover, .join_now_button:hover, .all_product_button:hover, .for_whom_card:hover {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
+}
+
+.card:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.card_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.cart_in_card {
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: none;
+  width: 50px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.cart_in_card:hover {
+  background: white;
 }
 
 .join_now_button {
@@ -356,19 +383,33 @@
 
 .input_place {
   margin-top: 20px;
+  text-align: none;
+  height: 45px;
   color: #B1B1B1;
   font-size: 13px;
 }
 
 .password_requriements {
   margin-top: 15px;
+  text-align: left;
   color: #B1B1B1;
   font-size: 13px;
 }
 
 .name_input_heading {
+  text-align: left;
   color: #222222;
   font-size: 16px;
+}
+
+.name_input, .login_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .select {
@@ -381,6 +422,7 @@
 }
 
 .loyalty_paragraph {
+  text-align: left;
   font-size: 24px;
 }
 
@@ -506,6 +548,7 @@
 
 .loyalty_ol {
   list-style: none;
+  display: inline-block;
 }
 
 .first_li {
@@ -522,6 +565,7 @@
 }
 
 .loyalty_li {
+  text-align: left;
   font-size: 24px;
 }
 
@@ -592,6 +636,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.male {
+  margin-right: 20px;
+}
+
+.male_text {
+  font-size: 11px;
 }
 
 .login_mod {
