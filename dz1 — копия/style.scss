@@ -5,6 +5,9 @@
 
 $mainColor: #F16D7F;
 
+a{
+    text-decoration: none;
+}
 .text_style{
     font-family: Lato;
     font-weight: 300;
@@ -68,7 +71,7 @@ $mainColor: #F16D7F;
     transform: scale(1.1,1.1);
 }
 
-.card:hover{
+.card_image:hover{
     filter: brightness(50%);
 }
 
@@ -78,21 +81,36 @@ $mainColor: #F16D7F;
 
 .card_item{
     display: flex;
-    position: relative;
+    margin-top: 30px;
+    width: 360px;
 }
 
 .cart_in_card{
     position: absolute;
-    align-self: center;
-    
-    background:none;
-    width: 50px;
-    height: 20px;
-    margin: 0 auto;
+
+    display: none;
+    justify-content: center;
+    top: 200px;
+    width: 100%;
 }
 
-.cart_in_card:hover{
+.card_item:hover .cart_in_card{
+    display: flex;
+    justify-content: center;
+    background: none;
+}
+
+.card_item:hover .cart_in_card_a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: white;
+    padding: 7px;
+    
+}
+
+.cart_in_card:hover .card{
+    filter: brightness(50%);
 }
 
 .join_now_button{
@@ -620,8 +638,9 @@ $mainColor: #F16D7F;
 }
 
 .cards{
-    margin-top: 30px;
-    @extend .dfjcsb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .margin_card{
@@ -693,18 +712,77 @@ $mainColor: #F16D7F;
 
 .cart_middle{
     @extend .dfjcsb;
+    padding-top: 96px;
+    padding-bottom: 130px;
 }
 
 .button_b{
     @extend .dfjcsb;
+    margin-top: 70px;
 }
 
-.clear_cart_button, .continue_shopping_button{
+
+
+.text_input{
     border: 1px solid black;
+    height: 50px;
+    @extend .text_style;
+    text-align: left;
 }
 
-.shopping_adress{
+.cart_button{
+    padding: 16px 40px;
+}
+
+.shopping_list{
+    
+}
+
+.shipping_adress{
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
+
+
+
+.card_cart{
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom_margin_card{
+    margin-bottom: 40px;
+}
+
+.bottom_margin_shipping{
+    margin-bottom: 20px;
+}
+
+.shipping_form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.total{
+    background: #F5F3F3;
+    padding: 40px 40px;
+}
+
+.proceed_to_checkout{
+    @extend .text_style;
+    padding: 15px 42px;
+    background: $mainColor;
+    color: white;
+}
+
+.get_quote{
+    @extend .text_style;
+    font-size: 11px;
+    padding: 10px 15px;
+    width: 110px;
+    background: $mainColor;
+    color: white;
+}
+
