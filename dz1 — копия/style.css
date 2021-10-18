@@ -1,0 +1,764 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text_style, .all_right_section, .card_header, .email_input, .email_input_button, .advantages_heading, .input_place, .password_requriements, .name_input_heading, .select, .loyalty_heading, .loyalty_paragraph, .new_arrivals, .breadcrumb-item, .active_breadcrumb, .collection_heading, .name_of_product, .description_text, .product_price, .subscribe_heading1, .subscribe_heading2, .lorem_text, .subscribe_text, .main_image_text, .for_whom_heading, .first_for_whom_heading, .second_for_whom_heading, .featured_items_header, .featured_items_paragraph, .card_paragraph, .card_price, .button_text, .first_li, .second_li, .loyalty_li, .male_text, .text_input, .proceed_to_checkout, .get_quote {
+  font-family: Lato;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+}
+
+.dfjcc, .subscribe1, .filter_section, .advantages_text, .for_whom_card, .all_product_button, .product_selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dfjcsb, .breadcrumb_section, .contacts_section, .menu_section, .for_whom_section, .accessories, .advantages_section, .subscribe_section, .big_product, .cart_middle, .button_b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dfdc, .loyalty_perks_section, .input_section, .catalog_section, .lorem_block, .subscribe_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.elch, .menu_element, .sn, .all_product_button, .card, .for_whom_card, .join_now_button {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.menu_item {
+  background: black;
+}
+
+.main_image_item {
+  background: #F1E4E6;
+}
+
+.aaa, .join_now_a {
+  text-decoration: none;
+}
+
+.menu_element:hover, .sn:hover, .aaa:hover, .join_now_button:hover, .all_product_button:hover, .for_whom_card:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.card_image:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.card_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  width: 360px;
+}
+
+.cart_in_card {
+  position: absolute;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 200px;
+  width: 100%;
+}
+
+.card_item:hover .cart_in_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+}
+
+.card_item:hover .cart_in_card_a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  padding: 7px;
+}
+
+.cart_in_card:hover .card {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.join_now_button {
+  padding: 15px;
+  background: #F16D7F;
+  color: white;
+  width: 167px;
+}
+
+.subscribe1 {
+  width: 100%;
+  position: relative;
+}
+
+.breadcrumb_section {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.breadcrumb_item {
+  background: #F8F3F4;
+}
+
+.male-female {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 31px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loyalty_perks_section {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.product_description_section {
+  text-align: center;
+  padding: 65px 250px;
+}
+
+.registration_middle_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 65px;
+  padding-bottom: 96px;
+}
+
+.input_section, .loyalty_perks_section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.input_section {
+  margin-right: 130px;
+}
+
+.catalog_section {
+  padding-bottom: 96px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+
+.pagination_section {
+  margin-top: 48px;
+}
+
+.filter_section {
+  position: relative;
+}
+
+.big_menu:hover {
+  opacity: 1;
+}
+
+.contacts_section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact_item {
+  background: black;
+}
+
+.all_right_section {
+  font-size: 16px;
+  color: #FBFBFB;
+}
+
+.margin_block {
+  margin-right: 30px;
+}
+
+.lorem_block {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_section {
+  background-color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+.left_menu_section, .right_menu_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main_image_section {
+  background-color: #F1E4E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.middle_section {
+  background-color: white;
+}
+
+.for_whom_section {
+  padding-top: 65px;
+}
+
+.card_header {
+  font-size: 13px;
+  margin-top: 25px;
+  margin-bottom: 13px;
+  color: #000000;
+}
+
+.featured_items_section {
+  padding-top: 96px;
+}
+
+.big_menu {
+  background: white;
+  height: 100%;
+  padding-bottom: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 37px;
+  opacity: 0;
+  position: relative;
+}
+
+.advantages_block {
+  height: 100px;
+  width: 360px;
+  text-align: center;
+}
+
+.accessories {
+  margin-top: 30px;
+}
+
+.advantages_section {
+  padding-top: 104px;
+  padding-bottom: 104px;
+}
+
+.advantages_item {
+  background-color: #222224;
+}
+
+.subscribe_section {
+  padding-top: 87px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe_item {
+  background: url(images/subscribe_background.svg);
+  padding-bottom: 130px;
+}
+
+.subscribe_block {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.email_window_frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+
+.email_input_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+.email_input {
+  border-radius: 25% 0 0 25%;
+  border: none;
+  padding: 7px;
+}
+
+.email_input_button {
+  background: #F16D7F;
+  border: none;
+  color: white;
+  border-radius: 0 25% 25% 0;
+  padding: 7px;
+}
+
+.for_whom_image {
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+  z-index: 0;
+}
+
+.lorem_photo {
+  width: 96px;
+}
+
+.arrow {
+  width: 47px;
+  height: 47px;
+}
+
+.sn:hover {
+  -webkit-filter: brightness(20%);
+          filter: brightness(20%);
+}
+
+.logo {
+  margin-right: 41px;
+}
+
+.poisk {
+  margin-top: 8px;
+}
+
+.drop_down {
+  margin-top: 5px;
+}
+
+.drop_down, .account {
+  margin-right: 33px;
+}
+
+.krestik {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.galochka {
+  margin-right: 10px;
+}
+
+.arrow_rigth {
+  height: 25px;
+  margin-left: 15px;
+}
+
+.advantages_heading {
+  padding-top: 20px;
+  font-size: 20px;
+  color: #FBFBFB;
+}
+
+.advantages_text {
+  padding-top: 16px;
+  font-size: 14px;
+  color: #FBFBFB;
+}
+
+.input_place {
+  margin-top: 20px;
+  text-align: none;
+  height: 45px;
+  color: #B1B1B1;
+  font-size: 13px;
+}
+
+.password_requriements {
+  margin-top: 15px;
+  text-align: left;
+  color: #B1B1B1;
+  font-size: 13px;
+}
+
+.name_input_heading {
+  text-align: left;
+  color: #222222;
+  font-size: 16px;
+}
+
+.name_input, .login_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.select {
+  font-size: 14px;
+  color: #6F6E6E;
+}
+
+.loyalty_heading {
+  font-size: 24px;
+}
+
+.loyalty_paragraph {
+  text-align: left;
+  font-size: 24px;
+}
+
+.new_arrivals {
+  font-size: 24px;
+  color: #F16D7F;
+}
+
+.breadcrumb-item {
+  font-size: 14px;
+  color: #636363;
+}
+
+.active_breadcrumb {
+  color: #F16D7F;
+}
+
+.collection_heading {
+  font-size: 14px;
+  color: #F16D7F;
+}
+
+.name_of_product {
+  font-size: 18px;
+  color: #4D4D4D;
+  margin-top: 27px;
+}
+
+.description_text {
+  font-size: 14px;
+  color: #5E5E5E;
+  margin-top: 48px;
+}
+
+.product_price {
+  font-size: 24px;
+  color: #F16D7F;
+  margin-top: 32px;
+}
+
+.subscribe_heading1 {
+  font-size: 24px;
+  color: #222224;
+}
+
+.subscribe_heading2 {
+  font-size: 24px;
+  color: #222224;
+}
+
+.lorem_text {
+  padding-top: 30px;
+  width: 360px;
+  color: black;
+}
+
+.subscribe_text {
+  position: absolute;
+  left: 10px;
+  color: white;
+}
+
+.main_image_text {
+  font-size: 32px;
+  font-weight: 900;
+  color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 92px;
+  padding-top: 300px;
+  padding-right: 200px;
+}
+
+.for_whom_heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  z-index: 1;
+}
+
+.first_for_whom_heading {
+  font-size: 16px;
+  color: white;
+}
+
+.second_for_whom_heading {
+  font-size: 16px;
+  color: #F16D7F;
+}
+
+.featured_items_header {
+  font-size: 30px;
+  color: #222222;
+}
+
+.featured_items_paragraph {
+  font-size: 14px;
+  color: #9F9F9F;
+}
+
+.card_paragraph {
+  font-size: 14px;
+  color: #5D5D5D;
+}
+
+.card_price {
+  color: #F16D7F;
+  font-size: 16px;
+  margin-top: 18px;
+}
+
+.button_text {
+  font-size: 16px;
+  color: #F16D7F;
+}
+
+.loyalty_ol {
+  list-style: none;
+}
+
+.first_li {
+  font-size: 14px;
+  color: #F16D7F;
+  list-style: none;
+}
+
+.second_li {
+  font-size: 14px;
+  padding-left: 15px;
+  color: #6F6E6E;
+  list-style: none;
+}
+
+.loyalty_li {
+  text-align: left;
+  font-size: 24px;
+}
+
+.for_women, .for_men {
+  margin-right: 30px;
+}
+
+.for_whom_card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.margin_card {
+  margin-right: 30px;
+}
+
+.card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #F8F8F8;
+  width: 360px;
+}
+
+.all_product_button:hover {
+  background: #F16D7F;
+}
+
+.all_product_button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 48px auto 95px;
+  padding: 14px 39px;
+  border: 1px solid #F16D7F;
+  width: 210px;
+  color: #F16D7F;
+}
+
+.big_product {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.big_product_item {
+  background: #F7F7F7;
+}
+
+.selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 11px;
+}
+
+.filter_section_element {
+  padding: 14px;
+}
+
+.male, .female {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.male {
+  margin-right: 20px;
+}
+
+.male_text {
+  font-size: 11px;
+}
+
+.login_mod {
+  margin-top: 30px;
+}
+
+.cart_middle {
+  padding-top: 96px;
+  padding-bottom: 130px;
+}
+
+.button_b {
+  margin-top: 70px;
+}
+
+.text_input {
+  border: 1px solid black;
+  height: 50px;
+  text-align: left;
+}
+
+.cart_button {
+  padding: 16px 40px;
+}
+
+.shipping_adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card_cart {
+  width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.bottom_margin_card {
+  margin-bottom: 40px;
+}
+
+.bottom_margin_shipping {
+  margin-bottom: 20px;
+}
+
+.shipping_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.total {
+  background: #F5F3F3;
+  padding: 40px 40px;
+}
+
+.proceed_to_checkout {
+  padding: 15px 42px;
+  background: #F16D7F;
+  color: white;
+}
+
+.get_quote {
+  font-size: 11px;
+  padding: 10px 15px;
+  width: 110px;
+  background: #F16D7F;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
